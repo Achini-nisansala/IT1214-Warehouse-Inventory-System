@@ -1,29 +1,24 @@
-Warehouse Inventory System
+Item Class - Warehouse Inventory System
 
 Project Description
+This is a simple Java class that represents an item in a warehouse inventory system.  
+Each item contains an ID, name, quantity, and price.
 
-This is a simple Java-based Warehouse Inventory System.
-It allows users to enter an item name and quantity, and display the item details.
+Class Details
 
-Features
-- Add item name
-- Add item quantity
-- Display item details
+Item Class
+Attributes:
+- itemId (String)
+- itemName (String)
+- quantity (int)
+- price (double)
 
-Technologies Used
-- Java
+Methods:
+- Constructor to initialize item
+- Getters (getItemId, getItemName, getQuantity)
+- Setter (setQuantity)
+- toString() method to display item details
 
-How to Run
-1. Compile the program:
-   javac Assignment.java
-
-2. Run the program:
-   java Main
-
-Sample Output
-Enter Item Name: Book  
-Enter Quantity: 10  
-
-Item Details  
-Name: Book  
-Quantity: 10  
+Sample Code Usage
+I001 | Book | Qty: 10 | Price: 500.0
+I002 | Pen | Qty: 20 | Price: 50.0
