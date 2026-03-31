@@ -1,21 +1,24 @@
-import java.util.Scanner;
+import java.util.*;
 
-public class Main {
-    public static void main(String[] args) {
+class Item {
+    private String itemId;
+    private String itemName;
+    private int quantity;
+    private double price;
 
-        Scanner sc = new Scanner(System.in);
+    public Item(String itemId, String itemName, int quantity, double price) {
+        this.itemId = itemId;
+        this.itemName = itemName;
+        this.quantity = quantity;
+        this.price = price;
+    }
 
-        String name;
-        int qty;
+    public String getItemId() { return itemId; }
+    public String getItemName() { return itemName; }
+    public int getQuantity() { return quantity; }
+    public void setQuantity(int quantity) { this.quantity = quantity; }
 
-        System.out.print("Enter Item Name: ");
-        name = sc.nextLine();
-
-        System.out.print("Enter Quantity: ");
-        qty = sc.nextInt();
-
-        System.out.println("\nItem Details");
-        System.out.println("Name: " + name);
-        System.out.println("Quantity: " + qty);
+    public String toString() {
+        return itemId + " | " + itemName + " | Qty: " + quantity + " | Price: " + price;
     }
 }
